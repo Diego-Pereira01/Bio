@@ -1,0 +1,103 @@
+.card {
+  width: 380px;
+  height: auto;
+  margin: 0 auto;
+  background: #000000b9;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(94, 94, 94, 0.5);
+  text-align: center;
+  color: white;
+}
+
+.card-header {
+  position: relative;
+}
+
+.background-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  top: 95px;
+  transform: translateX(-50%);
+  border: 3px solid #000000b9;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-body h2 {
+  margin-bottom: 10px; /* Ajuste conforme necessário */
+}
+
+.card-body p {
+  margin-top: 0; /* Remove qualquer margem superior */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.mini-cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os mini cards horizontalmente */
+   /* Espaçamento entre os mini cards */
+  margin-top: 20px;
+}
+
+.mini-card {
+  background: #0f0f0fa9;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Espaçamento entre os mini cards */
+}
+.icon {
+  font-size: 28px; /* Define o tamanho dos ícones para 20px */
+}
+
+
+.mini-card a {
+  color: white;
+  text-decoration: none;
+}
+
+.discord .icon:hover {
+  color: #5764F1; /* Cor ao passar o mouse no ícone do Discord */
+}
+
+.instagram .icon:hover {
+  color: #CC39A4; /* Cor ao passar o mouse no ícone do Instagram */
+}
+
+.steam .icon:hover {
+  color: #0E6B9A; /* Cor ao passar o mouse no ícone do Steam */
+}
+
+.xbox .icon:hover {
+  color: #107810; /* Cor ao passar o mouse no ícone do Xbox */
+}
