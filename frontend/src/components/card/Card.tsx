@@ -36,15 +36,17 @@ const Card: React.FC = () => {
 
   const getAvatarUrl = (id: string, avatar: string): string => {
     const isGif = avatar.startsWith('a_');
-    return `https://cdn.discordapp.com/avatars/${id}/${avatar}.${isGif ? 'gif' : 'png'}?size=1024`;
+    const extension = isGif ? 'gif' : avatar.endsWith('.png') ? 'png' : 'jpg';
+    return `https://cdn.discordapp.com/avatars/${id}/${avatar}.${extension}?size=1024`;
   };
-
+  
   const getBannerUrl = (id: string, banner: string | undefined): string => {
     if (!banner) return '';
     const isGif = banner.startsWith('a_');
-    return `https://cdn.discordapp.com/banners/${id}/${banner}.${isGif ? 'gif' : 'png'}?size=1024`;
+    const extension = isGif ? 'gif' : banner.endsWith('.png') ? 'png' : 'jpg';
+    return `https://cdn.discordapp.com/banners/${id}/${banner}.${extension}?size=1024`;
   };
-
+  
   return (
     <div className="card">
       <div className="card-header">
